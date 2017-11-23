@@ -32,11 +32,11 @@ If something goes wrong
 =======================
 Try to install script 
 ```
- -npm install storjboard
+ npm install storjboard
 ``````
  
  And then start
  ```
- -npm start --prefix node_modules/storjboard/
+ npm start --prefix node_modules/storjboard/
  ``````
 Done Thx, credits for this script to Aksimant
