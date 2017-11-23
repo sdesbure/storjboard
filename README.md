@@ -28,4 +28,15 @@ Status
 pm2 status
 
 
+If something goes wrong
+=======================
+Try to install script 
+-```
+ -npm install storjboard
+ -``````
+ 
+ And then start
+ -```
+ -npm start --prefix node_modules/storjboard/
+ -``````
 Done Thx, credits for this script to Aksimant
