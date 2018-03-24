@@ -1,8 +1,10 @@
 function requestInfo() {
+    var daemon_host= "127.0.0.1"; //where the storj daemon is running
+    var daemon_port= 45015; //on which port storj daemon is listening
     const timeNow = new Date().toISOString().replace(/T/, ' ').replace(/\..+/, '')
     const dnode = require('dnode');
     const request = require('request');
-    const daemon = dnode.connect(45015);
+    const daemon = dnode.connect(daemon_host,daemon_port);
     daemon.on('remote', function (rpc) {
         rpc.status(function (err, shares) {
             console.log(timeNow + ' - Data from StorjShare recived successfull');
